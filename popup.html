@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="dist/themes/default/style.min.css" />
+    <script type="text/javascript" src="dist/libs/jquery.js"></script>
+    <script type="text/javascript" src="dist/jstree.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+<body style="height:600px;width:800px">
+    <h1>DAP Log Aggregator
+    <button id="goButton">go</button>
+    <button id="stopScrollButton">disable scroll</button>
+    <button id="stopPollButton">disable poll</button>
+    <button id="dumpTxtButton">dump txt</button>
+    </h1>     
+    <textarea id="logArea" cols="150" rows="10"></textarea>
+    <div id="filterWithArea">
+        <button id="addFilterWithButton">add</button>
+        +<input id="filterWith"/> 
+    </div>
+    <br>
+
+    <div id="filterWithoutArea">
+        <button id="addFilterWithoutButton">add</button>
+        -<input id="filterWithout"/>
+    </div>
+    <br>
+
+    <input id="filterTimeFrom" size="30"/> ~ <input id="filterTimeTo" size="30"/><button id="goToTimeButton">go to time</button>
+    <div>
+        <div id="jstree"/>
+    </div>
+    <div>
+        <div id="config"/>
+    </div>    
+    <div>
+        <div id="log_display" style="display: block;font-family: monospace;white-space: pre;"/>
+    </div>
+    <div>
+        <div id="temp_parser" style="display: none;"/>
+    </div>
+</body>
+</html>

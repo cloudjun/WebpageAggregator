@@ -1,0 +1,15 @@
+{
+  "name": "DAP log aggregator",
+  "version": "1.0",
+  "description": "DAP log aggregator",
+  "permissions": ["webRequest", "webRequestBlocking",
+                  "https://portal.dap.intranet.db.com/*",
+                  "http://portal.dap.intranet.db.com/*"],
+  "browser_action": {
+      "default_title": "DAP log aggregator",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
